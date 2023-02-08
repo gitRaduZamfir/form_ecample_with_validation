@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Send Form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <form action="" id="form" class="form_body">
+          <h1 class="form_title">Email form example with validation</h1>
+          <div class="form_item">
+            <label for="formName" class="form_label">Name*:</label>
+            <input type="text" id="formName" class="form_input _req" />
+          </div>
+          <div class="form_item">
+            <label for="formEmail" class="form_label">Email*:</label>
+            <input
+              type="text"
+              id="formEmail"
+              name="email"
+              class="form_input _req _email"
+            />
+          </div>
+          <div class="form_item">
+            <div class="form_label">Sexul</div>
+            <div class="options">
+              <div class="options_item">
+                <input
+                  id="formSexMasculin"
+                  type="radio"
+                  value="Masculin"
+                  name="sex"
+                  class="options_input"
+                  checked
+                />
+                <label for="formSexMasculin" class="options_label"
+                  ><span>Masculin</span></label
+                >
+              </div>
+              <div class="options_item">
+                <input
+                  id="formSexFeminin"
+                  type="radio"
+                  value="Feminin"
+                  name="sex"
+                  class="options_input"
+                />
+                <label for="formSexFeminin" class="options_label"
+                  ><span>Feminin</span></label
+                >
+              </div>
+              <div class="options_item">
+                <input
+                  id="formSexOther"
+                  type="radio"
+                  value="Other"
+                  name="sex"
+                  class="options_input"
+                />
+                <label for="formSexOther" class="options_label"
+                  ><span>Other</span></label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="form_item">
+            <label for="formMessage" class="form_label">Message</label>
+            <textarea
+              name="Message"
+              id="formMessage"
+              class="form_input"
+            ></textarea>
+          </div>
+          <div class="form_item">
+            <div class="form_label">Vârsta:</div>
+            <select name="age" class="select">
+              <option value="18-25" selected>Tânăr (18-25 ani)</option>
+              <option value="26-45">Matur (26-45 ani)</option>
+              <option value="46+">Vârstnic (46+ ani)</option>
+            </select>
+          </div>
+          <div class="form_item">
+            <div class="form_label">Atașați o poză</div>
+            <div class="file">
+              <div class="file_item">
+                <input
+                  id="formImage"
+                  accept=".jpg, .png, .gif, .jpeg"
+                  type="file"
+                  name="image"
+                  class="file_input"
+                />
+                <div class="file_button">Alege</div>
+              </div>
+              <div id="formPreview" class="file_preview"></div>
+            </div>
+          </div>
+          <div class="form_item">
+            <div class="checkbox">
+              <input
+                checked
+                id="formAgreement"
+                type="checkbox"
+                name="agreement"
+                class="checkbox_input _req"
+              />
+              <label for="formAgreement" class="checkbox_label"
+                ><span
+                  >Imi dau acordul pentru prelucrarea datelor în conformitate cu
+                  <a href="#">Conditiile de utilizare</a>
+                </span></label
+              >
+            </div>
+          </div>
+          <button type="submit" class="form_button">Trimite</button>
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
